@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>划拨机具-选中</title>
+    <g id="界面设计-资金展示相关-提现" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="转账支持银行" transform="translate(-308.000000, -132.000000)">
+            <g id="编组-3" transform="translate(0.000000, 120.000000)">
+                <g id="划拨机具-选中" transform="translate(308.000000, 12.000000)">
+                    <g id="save"></g>
+                    <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                    <rect id="Rectangle-271" fill="#1E2B4F" x="0" y="0" width="16" height="16" rx="4"></rect>
+                    <path d="M11.7702533,5.254 L7.55825331,11.094 C7.30425331,11.448 6.77825331,11.448 6.52425331,11.094 L4.03025331,7.638 C3.95425331,7.532 4.03025331,7.384 4.16025331,7.384 L5.09825331,7.384 C5.30225331,7.384 5.49625331,7.482 5.61625331,7.65 L7.04025331,9.626 L10.1842533,5.266 C10.3042533,5.1 10.4962533,5 10.7022533,5 L11.6402533,5 C11.7702533,5 11.8462533,5.148 11.7702533,5.254 Z" id="Path" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

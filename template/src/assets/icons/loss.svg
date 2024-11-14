@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="17px" viewBox="0 0 36 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组@2x</title>
+    <g id="界面设计-我的政策" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="配置表单" transform="translate(-255.000000, -320.000000)">
+            <g id="编组-3" transform="translate(255.000000, 320.000000)">
+                <path d="M7.73520671,0 L34,0 C35.1045695,-2.02906125e-16 36,0.8954305 36,2 L36,15 C36,16.1045695 35.1045695,17 34,17 L7.73520671,17 C7.12619941,17 6.55037418,16.7225161 6.17090744,16.2461813 L0,8.5 L0,8.5 L6.17090744,0.753818726 C6.55037418,0.277483885 7.12619941,-3.32216383e-16 7.73520671,0 Z" id="矩形" fill="#EBF1FF" transform="translate(18.000000, 8.500000) scale(-1, 1) translate(-18.000000, -8.500000) "></path>
+                <text id="亏损" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="16" fill="#597CC5">
+                    <tspan x="3" y="14">亏损</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/SanFranciscoDisplay-Semibold-8.otf",
+      "sha1": "dcf26eadbc33d1e06a07d14ab954f653ae0db8c9"
+    },
+    {
+      "path": "assets/public/web/privacy.html",
+      "sha1": "b7fd41e3ae206ebac669c5b639c1f230bd7bcf9d"
+    }
+  ]
+}

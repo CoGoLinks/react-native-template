@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 6@2x</title>
+    <defs>
+        <polygon id="path-1" points="0 0 19 0 19 20 0 20"></polygon>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#BA973A" offset="0%"></stop>
+            <stop stop-color="#845E1B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#BA973A" offset="0%"></stop>
+            <stop stop-color="#845E1B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="界面设计-资金展示相关-提现" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="代理提现详情/待审核" transform="translate(-29.000000, -125.000000)">
+            <g id="编组-6" transform="translate(29.000000, 125.000000)">
+                <g id="编组-12">
+                    <rect id="矩形" fill="#FFEBCC" x="0" y="0" width="22" height="22"></rect>
+                    <g id="编组" transform="translate(2.000000, 0.500000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M12.3468578,-1 C13.1617879,-1 13.975705,-0.692580228 14.5989072,-0.0787719336 L18.9991432,4.26605623 L5.69221391,4.26605623 L10.0947354,-0.0808393598 C10.7185399,-0.693168848 11.5327928,-1 12.3468578,-1 Z" id="路径" stroke="#FFE9C5" stroke-width="2" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+                        <path d="M17.9964512,10.3412718 L17.9964512,6.5902354 C17.9964512,5.66918424 17.3254676,4.92297119 16.4958967,4.92297119 L1.49896413,4.92297119 C0.669292732,4.925268 -0.00159035963,5.67148106 -0.00159035963,6.5902354 L-0.00159035963,18.255707 C-0.00159035963,19.1767581 0.669292732,19.9229712 1.49896413,19.9229712 L16.4979556,19.9229712 C17.3254676,19.9229712 17.9984096,19.1767581 17.9984096,18.255707 L17.9984096,14.5068554 L17.9964512,10.3412718 Z" id="路径" fill="url(#linearGradient-4)" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+                <polygon id="路径" fill="#FFE9C8" fill-rule="nonzero" points="14.2166097 12.54 12.3937399 12.54 15.0186724 9.94 12.9478923 9.94 11.0958566 11.93 10.9937759 11.93 9.20007196 9.94 7.07096 9.94 9.62297775 12.54 7.78552497 12.54 7.78552497 13.5 10.0021347 13.5 10.0021347 14.08 7.78552497 14.08 7.78552497 15.04 10.0021347 15.04 10.0021347 16.94 12 16.94 12 15.04 14.2166097 15.04 14.2166097 14.08 12 14.08 12 13.5 14.2166097 13.5"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="7px" viewBox="0 0 5 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>shaixuanxialaanniu-3</title>
+    <defs>
+        <polygon id="path-1" points="0 0 7 0 7 5 0 5"></polygon>
+    </defs>
+    <g id="界面设计-资金展示相关-直签代理提现" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="填写发票申请-未填写" transform="translate(-213.000000, -107.000000)">
+            <g id="shaixuanxialaanniu-3" transform="translate(215.500000, 110.500000) rotate(-90.000000) translate(-215.500000, -110.500000) translate(212.000000, 108.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M3.94375897,4.74781324 C3.85792438,4.90272899 3.68688765,5 3.5003301,5 C3.31377254,5 3.14273581,4.90272899 3.05690122,4.74781324 L0.0696300339,0.753090881 C-0.128747616,0.420220666 0.117474508,0 0.510717112,0 L6.48760983,0 C6.88202333,0 7.12707456,0.419125488 6.93103871,0.753090881 L3.94258807,4.74781324 L3.94375897,4.74781324 Z" id="Fill-1" fill="#576B95" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

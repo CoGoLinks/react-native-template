@@ -1,0 +1,18 @@
+{
+  "name": "react-native-template-cogolinks",
+  "version": "0.0.1",
+  "description": "react-native 项目模版",
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "repository": "https://github.com/CoGoLinks/react-native-template.git",
+  "keywords": [
+    "react-native",
+    "template",
+    "cogolinks"
+  ],
+  "author": "sai373100489@163.com",
+  "license": "MIT",
+  "homepage": "https://github.com/CoGoLinks/react-native-template.git"
+}

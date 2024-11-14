@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>划拨机具-接收方</title>
+    <g id="界面设计-机具管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="回拨记录" transform="translate(-29.000000, -167.000000)">
+            <g id="划拨机具-接收方" transform="translate(29.000000, 167.000000)">
+                <rect id="矩形" fill="#FAAB0C" x="0" y="0" width="16" height="16" rx="2"></rect>
+                <g id="回" transform="translate(3.080000, 2.832000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M2.532,2.628 L2.532,7.068 L7.332,7.068 L7.332,2.628 L2.532,2.628 Z M6.252,6.12 L3.588,6.12 L3.588,3.588 L6.252,3.588 L6.252,6.12 Z M9.84,0 L0,0 L0,10.176 L1.104,10.176 L1.104,9.756 L8.736,9.756 L8.736,10.176 L9.84,10.176 L9.84,0 Z M1.104,8.748 L1.104,1.008 L8.736,1.008 L8.736,8.748 L1.104,8.748 Z" id="形状"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

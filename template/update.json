@@ -1,0 +1,10 @@
+{
+    "ios": {
+        "appId": 1,
+        "appKey": "pushy app id and key"
+    },
+    "android": {
+        "appId": 2,
+        "appKey": "pushy app id and key"
+    }
+}

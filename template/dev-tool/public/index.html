@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>开发助手</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="http://cdn.staticfile.net/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      body {
+        padding: 50px;
+      }
+
+      .img-list img {
+        max-width: 50px;
+        max-height: 50px;
+        width: 50px;
+      }
+
+      .img-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 150px;
+        height: 166px;
+      }
+
+      .img-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+      }
+
+      .img-item p {
+        margin: 5px 0 30px;
+        cursor: cell;
+      }
+
+      .modal-copy {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: opacity 1s;
+      }
+      .modal-copy-box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .modal-copy-content {
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 10px;
+        min-width: 200px;
+        color: rgba(255, 255, 255, 1);
+        border-radius: 8px;
+      }
+      @media (prefers-color-scheme: dark) {
+        .modal-copy-content {
+          background-color: rgba(255, 255, 255, 0.8);
+          color: rgba(0, 0, 0, 0.8);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabs is-medium">
+      <ul>
+        <li class="is-active" data-type="icons"><a>图标</a></li>
+        <li data-type="images"><a>图片</a></li>
+      </ul>
+    </div>
+    <div class="tabs-content">
+      <div class="flex flex-wrap is-hidden img-list" id="icon-list"></div>
+      <div class="is-hidden" id="image-list"></div>
+    </div>
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content justify-center items-center flex">
+        <img src="" alt="" />
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <div id="myModal" class="modal-copy">
+      <div class="modal-copy-box">
+        <div class="modal-copy-content center">
+          <p class="text-center">复制成功！</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function copy(text) {
+      navigator.clipboard.writeText(text).then(
+        function () {
+          // alert('复制成功');
+          openCopyModal();
+        },
+        function (err) {
+          alert('无法复制', err);
+        },
+      );
+    }
+    function getAssets(type) {
+      return new Promise((resolve, reject) => {
+        fetch('/api/' + type)
+          .then((response) => response.json())
+          .then((data) => {
+            if (type === 'icons') {
+              $('#icon-list')
+                .empty()
+                .removeClass('is-hidden')
+                .siblings()
+                .addClass('is-hidden');
+              data.forEach((item) => {
+                const imgsrc = '/static/images/icons/' + item;
+                const [fileName, fileType] = item.split(/\.(?=[^\.]+$)/);
+                $('#icon-list').append(`
+                  <div class="img-item">
+                    <div class="img-box">
+                      <img src="${imgsrc}" />
+                    </div>
+                    <p onClick="copy('${fileName}')">${fileName}</p>
+                  </div>
+                `);
+              });
+            } else if (type === 'images') {
+              $('#image-list')
+                .empty()
+                .removeClass('is-hidden')
+                .siblings()
+                .addClass('is-hidden');
+              Object.keys(data).forEach((key) => {
+                $('#image-list').append(`
+                  <h4 class="subtitle is-5">${key}</h4>
+                  <div class="flex flex-wrap img-list box">
+                    ${data[key]
+                      .map((img) => {
+                        const fileName = img.split(/\.(?=[^\.]+$)/)[0];
+                        return `
+                      <div class="img-item">
+                        <div class="img-box">
+                          <img src="/static/images/images/${key}/${img}" />
+                        </div>
+                        <p onClick="copy('${key}.${fileName}')">${fileName}</p>
+                      </div>
+                    `;
+                      })
+                      .join('')}
+                  </div>
+                `);
+              });
+            }
+          });
+      });
+    }
+    (function () {
+      getAssets('icons');
+      $('.tabs li').click(function () {
+        const type = $(this).data('type');
+        $(this).addClass('is-active').siblings().removeClass('is-active');
+        getAssets(type);
+      });
+
+      $(document).on('click', '#image-list img', function () {
+        const src = $(this).attr('src');
+        $('.modal-content img').attr('src', src);
+        $('.modal').addClass('is-active');
+      });
+
+      $('.modal-background, .modal-close').click(function () {
+        $('.modal').removeClass('is-active');
+      });
+    })();
+
+    var modal = document.getElementById('myModal');
+
+    function openCopyModal() {
+      modal.style.display = 'block';
+      modal.style.opacity = 1;
+      setTimeout(closeCopyModal, 1500);
+    }
+
+    function closeCopyModal() {
+      modal.style.opacity = 0;
+      setTimeout(function () {
+        modal.style.display = 'none';
+      }, 1000);
+    }
+  </script>
+</html>
