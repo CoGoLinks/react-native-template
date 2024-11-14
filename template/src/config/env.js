@@ -10,11 +10,10 @@ export const isProd = env === 'prod';
 
 const envConfigMap = {
   test: {
-    baseURL: 'http://22.50.2.163:8080', // 接口地址
-    // baseURL: 'http://172.16.44.62:8080', // 朝伟
+    baseURL: 'baseURL', // 接口地址
   },
   prod: {
-    baseURL: 'https://xyf-pro.xlmclub.com',
+    baseURL: 'baseURL', // 接口地址
   },
 };
 
